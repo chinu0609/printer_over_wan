@@ -1,0 +1,8 @@
+first we will design the a http server and client model that will run on a computer where we will be able
+send files to printer directly.
+server <-> client model
+second we will need a function  that will print files to the printer
+
+
+
+
