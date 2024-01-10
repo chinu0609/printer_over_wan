@@ -2,7 +2,7 @@ from flask import Flask, redirect, render_template, url_for
 from flask_wtf import FlaskForm
 from wtforms import FileField
 from werkzeug.utils import secure_filename
-
+from printer import printer
 
 
 app = Flask("Ganesha")
@@ -26,6 +26,7 @@ def upload():
       
         filename = secure_filename(form.file.data.filename)
         form.file.data.save('uploads/'+filename)
+        printer(filename) 
         return redirect(url_for('upload'))
     return render_template("index.html",form=form)
    
@@ -35,4 +36,4 @@ def upload():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,host = "your ip assigned by the router here")
