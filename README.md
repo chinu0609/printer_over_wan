@@ -26,6 +26,6 @@ pip install -r requirement.txt
 
 Then edit the bat file with path where the project is present.
 As the website is limited to windows now i have created
-a bar file which fires the server and the website is availabe at the ip address specified to all the pcs in LAN.
+a bat file which fires the server and the website is availabe at the ip address specified to all the pcs in LAN.
 
 Done!
